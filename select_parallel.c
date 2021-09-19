@@ -3,7 +3,7 @@
 #include <time.h>
 #include<omp.h>
 #include<sys/time.h>
-#define Size 100000
+#define Size 10000
 
 struct Compare { int val; int index; };
 #pragma omp declare reduction(maximum : struct Compare : omp_out = omp_in.val > omp_out.val ? omp_in : omp_out)
