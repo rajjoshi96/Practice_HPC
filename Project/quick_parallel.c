@@ -1,4 +1,3 @@
-// To submit serial program
 
 
 ///quick sort using pivot as the last element 
@@ -9,7 +8,7 @@
 #include <time.h>
 #include<omp.h>
 #include<sys/time.h>
-#define Size 100000
+#define Size 10000
 
 // Swap function
 void swap(float* a, float* b)
@@ -70,7 +69,7 @@ void printArray(float arr[], int size)
 {
     int i;
     for (i=0; i < size; i++)
-    printf("%f \n", arr[i]);
+        printf("%f \n", arr[i]);
 }
 int main(int argc, char *argv[])
 {
