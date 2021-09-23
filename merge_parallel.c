@@ -38,9 +38,7 @@ void merge_sort(int i, int j, float a[], float aux[]) {
         //merge_sort(i, mid, a, aux);     // sort the left sub-array recursively
         //merge_sort(mid + 1, j, a, aux);     // sort the right sub-array recursively
 
-        //int pointer_left = i;       // pointer_left points to the beginning of the left sub-array
-        //int pointer_right = mid + 1;        // pointer_right points to the beginning of the right sub-array
-        //int k;      // k is the loop counter
+
 
         // we loop from i to j to fill each element of the final merged array
             #pragma omp critical
@@ -62,7 +60,7 @@ void merge_sort(int i, int j, float a[], float aux[]) {
                 }
             }
 
-            for (k = i; k <= j; k++) {      // copy the elements from aux[] to a[]
+            for (k = i; k <= j; k++) {      //creating duplicate copy of array
                 a[k] = aux[k];
             }
             }   

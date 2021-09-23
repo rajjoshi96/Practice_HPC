@@ -40,7 +40,7 @@ void merge_sort(int i, int j, float a[], float aux[]) {
         }
     }
 
-    for (k = i; k <= j; k++) {      // copy the elements from aux[] to a[]
+    for (k = i; k <= j; k++) {      
         a[k] = aux[k];
     }
 }
